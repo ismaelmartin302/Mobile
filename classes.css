@@ -9,7 +9,14 @@ mobile-main {
   border: 1px solid white;
   color: white;
 }
+mobile-main header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 mobile-main header ul {
+  padding: 0;
+  height: fit-content;
   display: flex;
   list-style: none;
 }

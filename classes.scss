@@ -10,7 +10,12 @@ mobile-main {
     color: rgb(255, 255, 255);
 
     header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
         ul {
+            padding: 0;
+            height: fit-content;
             display: flex;
             list-style: none;
         }
