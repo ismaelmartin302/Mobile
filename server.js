@@ -5,6 +5,7 @@ const desiredPort = process.env.PORT ?? 1234;
 
 const server = http.createServer((req, res) => {
     console.log('Petición recibida', req.url);
+    res.statusCode = 200;
     if (req.url === '/') {
         fs.readFile('./index.html', (err, data) => {
             if (err) {
@@ -14,6 +15,7 @@ const server = http.createServer((req, res) => {
             }
         })
     } else {
+        res.statusCode = 404;
         res.end('Error')
     }
 })
