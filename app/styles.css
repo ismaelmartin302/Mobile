@@ -1,23 +1,46 @@
-mobile-main {
+body {
+  background-color: black;
+}
+body mobile-main {
   display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
   height: 50em;
-  width: 30em;
+  width: 35em;
   border: 1px solid white;
   color: white;
-  /*     main {
-
-      } */
 }
-mobile-main header {
+body mobile-main header {
   display: flex;
-  margin: 0 1em;
   width: 100%;
   justify-content: space-between;
 }
-mobile-main header ul {
+body mobile-main header ul {
+  margin: 1em;
   padding: 0;
   margin-top: 0;
   height: fit-content;
   display: flex;
   list-style: none;
+}
+body mobile-main main {
+  display: grid;
+  grid-template-columns: repeat(5, 5em);
+  grid-template-rows: repeat(4, 5em);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+body mobile-main main div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 1em;
+}
+body mobile-main footer ul {
+  display: flex;
+  list-style: none;
+  gap: 5em;
+  justify-content: space-around;
 }
